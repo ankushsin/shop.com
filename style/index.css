@@ -1,0 +1,279 @@
+body{
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    background-color: #f0f1f7 ;
+}
+/* -----------TOP DIV--------- */
+#top_div{
+    width: 100%;
+    background-color: white;
+}
+#dolloer{
+    
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    margin-top: -13px;
+    margin-bottom: -13px;
+
+}
+#dolloer h1{
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.625);
+    margin-right: 10px;
+}
+#dolloer p{
+    font-size: 17px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.697);
+}
+#dolloer button{
+    border-radius: 40px;
+    padding: 10px;
+}
+#dolloer img{
+    width: 4%;
+}
+
+#hallowen {
+    height: 350px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#hallowen img{
+   width: 100%;
+}
+
+/* -------TOP DIV END-------- */
+
+
+
+/* ---------sec_div------ */
+
+#sec_div{
+    width: 100%;
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+     height: auto;
+ margin: auto;
+ margin-top: 50px;
+ } 
+#sec_div>div{
+     /* border: 2px solid red; */
+     width: 23%;
+     
+     padding: 0px 7px;
+    
+
+}
+#viw_1{
+    width: 90%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#viw_1>img{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+#viw_2{
+    width: 90%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#viw_2>img{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+#viw_3 {
+    width: 80%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#viw_3 div{
+    width: 92%;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+}
+#viw_3 div img{
+    display: flex;
+    margin: auto;
+    width: 40%;
+}
+#viw_3 a{
+    color: black;
+    
+}
+#viw_4 p{
+    font-size: 20px;
+    width: 100%;
+    /* color: red; */
+    margin: auto;
+    margin-bottom: 20px;
+} 
+#viw_4 img{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 7px;
+}
+#sign_in_page{
+    /* border: 2px solid red; */
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#sign_in_page button{
+    display: flex;
+    margin: auto;
+    padding: 10px 110px;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(35, 35, 138);
+    color: white;
+}
+
+
+/* -----------thirt_div----------- */
+
+
+
+#thirt_div{
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    /* border: 2px solid red; */
+    gap: 40px;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+}
+#focus_div{
+    width: 33%;
+    /* border: 2px solid black; */
+    display: flex;
+
+}
+#focus_div img{
+    width: 100%;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
+}
+#brands_div{
+    width: 100%;
+
+    /* border:  2px solid green; */
+}
+#brands_name{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+#brands_name div{
+    
+    margin: auto;
+    margin: 10px;
+    background-color: #f0f1f7;
+}
+
+#brands_name div img{
+    /* gap: 15px; */
+    display: flex;
+    width: 53%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 40px;
+   
+}
+
+#detail_sec{
+    display: flex;
+    /* border: 2px solid rgb(34, 0, 255); */
+    width: 100%;
+}
+#detail_sec p{
+    font-size: 12px;
+    font-weight: bold;
+}
+.doll{
+    width: 7%;
+}
+
+.brand_details{
+    /* border: 2px solid blueviolet; */
+    width: 100%;
+}
+.brand_img{
+    width: 95%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.673) 0px 1px 4px;
+}
+.brand_details h1{
+    font-size: 17px;
+}
+#container_1{
+    display: flex;
+    width: auto;
+    height: auto;
+    
+    margin: 10px auto;
+    justify-content: left;
+    overflow-x: auto;
+    
+}
+section::-webkit-scrollbar{
+    visibility: hidden;
+}
+#container_1 div{
+   width: 700px;
+   height: auto;
+   position: relative;
+   left:0;
+   /* text-align: center; */
+   /* padding-top: 60px; */
+   margin: 10px 20px;
+   transition: 0.5s;
+   border:2px solid red;
+   
+   
+   
+}
+#container_1 img{
+    /* width: 100%; */
+    width: 300px;
+}
+
+
+#container_1 h1{
+    font-size: 18px;
+}
+#Fourth_div>h1{
+    padding-top: 100px;
+}
+#Fourth_div{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
