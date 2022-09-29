@@ -2,7 +2,16 @@ body{
     font-family: Roboto,Arial,Helvetica,sans-serif;
     background-color: #f0f1f7 ;
 }
+a{
+    color: black;
+}
 /* -----------TOP DIV--------- */
+#shop1{
+    font-size: 5px;
+    margin-bottom: 19px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.675);
+}
 #top_div{
     width: 100%;
     background-color: white;
@@ -20,7 +29,7 @@ body{
 }
 #dolloer h1{
     font-size: 35px;
-    color: rgba(0, 0, 0, 0.625);
+    color: rgba(33, 31, 31, 0.625);
     margin-right: 10px;
 }
 #dolloer p{
@@ -31,9 +40,19 @@ body{
 #dolloer button{
     border-radius: 40px;
     padding: 10px;
+    background-color: none;
+    background: none;
+}
+#dolloer button:hover{
+    background-color: rgba(12, 12, 50, 0.951);
+    color: #f0f1f7;
+    border: none;
+    font-weight: bold;
+
+
 }
 #dolloer img{
-    width: 4%;
+    width: 3%;
 }
 
 #hallowen {
@@ -226,48 +245,371 @@ body{
 .brand_details h1{
     font-size: 17px;
 }
-#container_1{
+
+#shop_img{
+    width:10% ;
+  position: absolute;
+  display:flex;
+}
+
+/* --------second scroll start---- */
+
+#container_1, .same_cont{
     display: flex;
-    width: auto;
+    width: 98%;
     height: auto;
-    
+    position: relative;
     margin: 10px auto;
     justify-content: left;
-    overflow-x: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+
     
 }
-section::-webkit-scrollbar{
+.same_cont::-webkit-scrollbar{
     visibility: hidden;
+    -webkit-appearance:none ;
 }
-#container_1 div{
-   width: 700px;
+#container_1 div, .same_cont div{
+   min-width: 280px;
    height: auto;
    position: relative;
    left:0;
-   /* text-align: center; */
-   /* padding-top: 60px; */
+   padding-top: 10px;
    margin: 10px 20px;
-   transition: 0.5s;
-   border:2px solid red;
-   
-   
+   /* transition: 0.5s; */
+   cursor: pointer;
+   overflow: hidden;
    
 }
-#container_1 img{
+.same_cont div h1:nth-of-type(1){
+    font-size: 14px;
+}
+.same_cont img{
     /* width: 100%; */
-    width: 300px;
+    width: 270px;
 }
 
 
-#container_1 h1{
+.same_cont h1{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.same_cont h1:nth-of-type(2){
     font-size: 18px;
+    font-weight: bolder;
+    margin-top: -8px;
 }
+.same_cont p{
+    font-size: 12px;
+    color: rgb(66, 134, 172);
+    margin-top: -13px;
+}
+.same_cont h3{
+    margin-top: -23px;
+    margin-left: 24px;
+}
+
 #Fourth_div>h1{
-    padding-top: 100px;
+    margin-left: 5px;
 }
 #Fourth_div{
     background-color: white;
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    /* margin-top: -30px; */
 }
+#Fourth_div>span, .min_seventh_div>span {
+    position: absolute;
+    top: 48%;
+    font-size:90px ;
+    font-weight: bold;
+    color: rgb(58, 14, 58);
+    cursor: pointer;
+    left:1%;
+    z-index: 1;
+}
+#Fourth_div>span:nth-of-type(2), #scroll_btn_21{
+    left:98%;
+    text-align: right;
+}
+ .same_cont img:nth-of-type(2){
+    width: 7%;
+  
+    margin-top: -120px;
+}
+
+
+/* ----------end 1st scroll----- */
+
+
+#fifth_div,#ninth_div,#twelvth_div{
+    display: flex;
+    width: 98%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    font-size: 8px;
+    margin-top: 20px;
+}
+#fifth_div>div>img, #ninth_div>div>img, #twelvth_div>div>img{
+    display: flex;
+    margin: auto;
+    width: 79%;
+    margin-top: 12px;
+    box-shadow: rgba(99, 99, 99, 0.525) 0px 2px 8px 0px;
+}
+#fifth_div>div>div img,
+ #ninth_div>div>div img, 
+ #twelvth_div>div>div img{
+    width: 4%;
+    margin-top: 10px;
+    margin-right: 3px;
+    margin-bottom: -2px;
+}
+#sixth_div{
+    width: 98%;
+    height: 340px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+#sixth_div>h1{
+    text-align: center;
+    font-family: serif  ;
+    font-weight: normal;
+    padding: 30px;
+    font-size: 35px;
+    margin-bottom: -8px;
+    
+}
+#women_ass{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#women_ass>div{
+    
+    width: 20%;
+    text-align: center;
+    font-size: 8px;
+    margin: auto;
+}
+#women_ass>div img{
+    width: 70%;
+    border-radius: 50%;
+    border: 12px solid rgba(140, 152, 152, 0.832);
+}
+#seventh_div{
+    background-color: white;
+    width: 98%;
+    margin: auto;
+
+}
+.min_seventh_div{
+    background-color: white;
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+}
+.beuty_div img{
+ width: 90%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* margin: auto; */
+}
+#scroll_btn_11{
+    left: 410px;
+    margin-top: -40px;
+    
+}
+#container_2{
+    width: 100%;
+    padding-left: 20px;
+    margin-left: -20px;
+   
+}
+#container_2 div{
+    width: 70%;
+}
+#container_2 h3{
+    right: 20px;
+}
+#seventh_div>h1{
+    margin: 15px 0 0 15px;
+    padding-top: 10px;
+    font-size: 31px;
+    margin-top: 10px;
+}
+#eighth_div{
+    background-color: white;
+    width: 98%;
+    margin: auto;
+    
+}
+
+ #scroll_btn_23,#scroll_btn_24, #scroll_btn_26{
+    left:98%;
+    text-align: right;
+}
+ .same_cont img:nth-of-type(2){
+    width: 7%;
+  
+    margin-top: -120px;
+}
+#scroll_btn_12, #scroll_btn_15{
+    left: 430px;
+}
+#container_3{
+    margin-left: -20px;
+}
+#eighth_div>h1{
+    margin:10px 0 0 10px;
+
+}
+#scroll_btn_13, #scroll_btn_14{
+left: 10px;
+}
+ #scroll_btn_24,#scroll_btn_25{
+    left:68%;
+    text-align: right;
+
+ }
+ #tenth_div{
+    background: white;
+    width: 98%;
+    margin: auto;
+ }
+ #tenth_div>h1{
+    margin-top: 20px;
+    padding: 10px 0 0 10px;
+    color: rgba(0, 0, 0, 0.79);
+ }
+ #eleventh_div{
+    width: 98%;
+    margin: auto;
+    background: white;
+ }
+
+
+ .beuty_div img{
+    margin: auto;
+    margin-top: 10px;
+ }
+ #eleventh_div>h1{
+    padding: 10px 0 0 13px;
+    color: rgba(0, 0, 0, 0.816);
+ }
+ #thirteen_div{
+    background: white;
+    width: 98%;
+    margin: auto;
+
+ }
+ #thirteen_div>h1{
+    padding: 10px 0 0 10px;
+ }
+ #scroll_btn_15{
+    left: 1px;
+ }
+ #scroll_btn_26{
+    left: 67%;
+    text-align: right;
+ }
+ #container_7{
+    width: 100%;
+ }
+ #container_7>div{
+    /* border: 2px solid red; */
+    width: 20%;
+    margin: 0;
+    padding: 0;
+ }
+ #fourteen_div{
+    background: white;
+ }
+ #fourteen_div>h1{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.771);
+    padding-top: 40px;
+ }
+ #scroll_btn_16{
+    left: 1px;
+ }
+ #scroll_btn_27{
+    left: 97%;
+    text-align: right;
+ }
+ #fivteen_div{
+    background: white;
+    width: 98%;
+    margin: auto;
+ }
+#fivteen_div>h1{
+    padding: 10px 10px;
+}
+#last{
+    display:flex;
+    width: 98%;
+    margin: auto;
+    
+}
+#sixteen_div>h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#sixteen_div{
+    background: white;
+    margin: auto;
+}
+#last div {
+    
+    margin: auto;
+    width: 100%;
+}
+#last div img{
+    width: 75%;
+    display: flex;
+    margin: auto;
+}
+#last div h1{
+    font-size: 16px;
+    text-align: center;
+}
+
+#sixth_div img:hover{
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    position: static;
+    transition: 0.91s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
