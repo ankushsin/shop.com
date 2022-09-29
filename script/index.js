@@ -64,6 +64,9 @@ function display(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
         let img=document.createElement('img')
         img.src=ele.img;
         let Name = document.createElement('h1')
@@ -87,6 +90,9 @@ function display(){
 display()
 
 
+function storedata(data){
+    localStorage.setItem("clicked_item", JSON.stringify(data));
+   }
 
 // -----------------slider part-----------
 
@@ -178,6 +184,9 @@ function display2(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -311,6 +320,9 @@ function display3(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -425,6 +437,9 @@ function display4(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -517,6 +532,9 @@ function display5(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -653,6 +671,9 @@ function display6(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -750,6 +771,9 @@ function display7(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
 
         let img=document.createElement('img')
         img.src=ele.img;
@@ -871,6 +895,9 @@ function display8(){
         let div1 = document.createElement('div');
         div1.setAttribute('class','box')
         div1.id='divv';
+        div1.onclick=() =>{
+            storedata(ele)
+        }
         let img=document.createElement('img')
         img.src=ele.img;
         let Name = document.createElement('h1')

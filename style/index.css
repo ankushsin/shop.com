@@ -5,6 +5,9 @@ body{
 a{
     color: black;
 }
+img{
+    cursor: pointer;
+}
 /* -----------TOP DIV--------- */
 #shop1{
     font-size: 5px;
