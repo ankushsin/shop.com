@@ -4,7 +4,7 @@
     /* background-color: #fff; */
 }
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,12 +14,13 @@
     height: 150px;
 }
 .cart-main{
-    border: 1px solid red;
-    height: 690px;
+    /* border: 1px solid red; */
+    height: auto;
 }
 .cart-footer{
-    border: 1px solid black;
-    height: 80px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    height:auto;
     background-color: #F0F1F7;
 }
 .copyright{
@@ -56,19 +57,108 @@
     padding: 10px 10px;
 }
 .cart-check{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 99%;
-    height: 550px;
+    height: auto;
     margin: auto;
     display: grid;
     grid-template-columns:70% 28% ;
     gap: 10px;
+    
 }
-.cart-check div{
-    border: 1px solid red;
+
+#card-details div{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    /* width: 70%;
+    height: 200px; */
+    cursor:pointer;
+    
+    
+}
+.indec{
+    margin-left: 20%;
+
+}
+.indec button{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 40%;
+    border: none;
+    padding: 5px 5px;
+    align-items: center;
+}
+.indec button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#card-details div div{
+    /* border: 1px solid black; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin-top: 10px;
+    /* text-align: center; */
+}
+.save:hover,.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#card-details div div h3:hover{
+    color: #00b4d8;
+
+}
+#card-details div div button{
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+#card-details div div div button{
+    display: flex;
+    width: 5%;
+}
+.redline{
+    /* border: 1px solid red; */
+    color: #FFA76D;
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+}
+.underline{
+    text-decoration: none;
+    color: black;
+}
+u{
+    margin: 6px 6px;
+}
+.cart-check{
+    /* display: flex;
+    flex-direction:column ; */
+}
+.cart-check p{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    margin-bottom: 5px;
 }
 .checkout{
     background-color: #F0F1F7;
+    height:600px;
 }
 .checkout h2{
     /* border: 1px solid black; */
@@ -79,4 +169,106 @@
     border: 1px solid black;
     width: 95%;
     margin: auto;
+}
+
+/**
+*!class-label & id-textcentre  
+**/
+#interest{
+    font-size: 17px;
+}
+#checkinout{
+    margin-left: 50%;
+
+    cursor: pointer;
+    width: 50%;
+    padding:12px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #414467;
+    color: white;
+    /* font-size: large; */
+    margin-top: 30px;
+
+}
+#total{
+    /* border: 1px solid red; */
+    /* display: flex; */
+width: 80%;
+margin: auto;
+margin-top: 40px;
+padding:10px 10px;
+font-size: 20px;
+}
+#total>p+span{
+    font-weight: bold;
+}
+
+#sub+span{
+    font-weight: bold;
+}
+
+h1{
+width: 100%;
+box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+text-align: center;
+}
+#container>div{
+box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+width: 60%;
+margin-top: 5%;
+}
+#container>div>img{
+    width: 80%;
+}
+#Fc{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.zip{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    font-size: 30px;
+}
+#apply{
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius: 18px;
+    border: none;
+}
+
+#apply:hover{
+    background-color: #414467;
+    color: white;
+    border: none;
+}
+#cont{
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+.paypal1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.paypal1 img:nth-child(1){
+    width: 40%;
+    margin-top: 20px;
+}
+.paypal1 img:nth-child(2){
+    width: 40%;
+    margin-top: 20px;
+}
+.paypal1 img:nth-child(3){
+    width: 40%;
+    margin-top: 20px;
 }
