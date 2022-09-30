@@ -1,8 +1,8 @@
-// import navbar from '../components/navbar.js';
+import navbar from '../navbar/componets/navbar.js';
 
 
-// let nabvar_div = document.getElementById('navbar')
-// nabvar_div.innerHTML= navbar()
+let nabvar_div = document.getElementById('navbar')
+nabvar_div.innerHTML= navbar()
 
 // import footer from '../components/footer.js';
 
@@ -10,7 +10,12 @@
 // let footer_div = document.getElementById('footer')
 // footer_div.innerHTML= footer()
 
-
+let search_btn = document.getElementById('let search_btn')
+let searchbar = document.getElementById('searchbar').value;
+ search_btn = document.addEventListener('click', function(){
+    console.log("gaga")
+   localStorage.setItem('search_item', JSON.stringify(searchbar))
+})
 
 var arr = [
     {
