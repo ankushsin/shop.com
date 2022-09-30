@@ -1,3 +1,17 @@
+import navbar from '../components/navbar.js';
+
+
+let nabvar_div = document.getElementById('navbar')
+nabvar_div.innerHTML= navbar()
+
+import footer from '../components/footer.js';
+
+
+let footer_div = document.getElementById('footer')
+footer_div.innerHTML= footer()
+
+
+
 var arr = [
     {
     Name:"AXIS Nutrition™ Advanced Digestive Support",

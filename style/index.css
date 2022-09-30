@@ -8,6 +8,11 @@ a{
 img{
     cursor: pointer;
 }
+span:hover{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.056);
+
+}
 /* -----------TOP DIV--------- */
 #shop1{
     font-size: 5px;
@@ -164,6 +169,7 @@ img{
     border: none;
     background-color: rgb(35, 35, 138);
     color: white;
+    width: auto;
 }
 
 
@@ -396,7 +402,6 @@ img{
     margin: auto;
 }
 #women_ass>div{
-    
     width: 20%;
     text-align: center;
     font-size: 8px;
@@ -597,8 +602,253 @@ left: 10px;
     transition: 0.91s;
 }
 
+@media all and (min-width:481px) and (max-width:761px){
+  #sec_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
 
+  }
+  #sec_div>div{
+    width: 90%;
+  }
+  #hallowen {
+    height: 220px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+#scroll_btn_2, #scroll_btn_21, #scroll_btn_23{
+    
+    text-align: right;
+    /* border: 2px solid red; */
+    margin-left: -30px;
+}
+#scroll_btn_11,#scroll_btn_12{
+    margin-left: -90px;
+    margin-top: 10px;
+}
+#scroll_btn_24, #scroll_btn_25, #scroll_btn_26{
+    margin-left: -130px;
+    margin-top: 10px;
+}
+#sign_in_page button{
+    
+    width: auto;
+}
+.beuty_div{
+    display: none;
+}
+#scroll_btn_11,#scroll_btn_12{
+    align-items: left;
+    margin-left: -410px;
+}
 
+#scroll_btn_24,#scroll_btn_25,#scroll_btn_26{
+    margin-left: 170px;
+    margin-top: -5px;
+}
+}
+@media all and (min-width:320px) and (max-width:480px){
+    #sec_div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        width: 100%;
+    
+      }
+      #focus_div{
+       
+        display: none;
+      }
+      #thirt_div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      #brands_name{
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    #detail_sec{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* border: 2px solid rgb(34, 0, 255); */
+        width: 100%;
+    }
+      #sec_div>div{
+        width: 90%;
+      }
+      #hallowen {
+        height: 220px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+    }
+    #scroll_btn_2, #scroll_btn_21, #scroll_btn_23{
+        
+        text-align: right;
+        /* border: 2px solid red; */
+        margin-left: -30px;
+    }
+    #scroll_btn_11,#scroll_btn_12{
+        margin-left: -90px;
+        margin-top: 10px;
+    }
+    #scroll_btn_24, #scroll_btn_25, #scroll_btn_26{
+        margin-left: -130px;
+        margin-top: 10px;
+    }
+    #sign_in_page button{
+        
+        width: auto;
+    }
+    .same_cont div{
+        width: 10%;
+    }
+   
+    .same_cont div img{
+        width: 70px;
+        
+    }
+    .same_cont h1{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .same_cont h1:nth-of-type(2){
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: -8px;
+    }
+    .same_cont p{
+        font-size: 12px;
+        color: rgb(66, 134, 172);
+        margin-top: -13px;
+    }
+    .same_cont h3{
+        margin-top: -23px;
+        margin-left: 24px;
+    }
+    #container_1 div, .same_cont div{
+        min-width: 180px;
+        height: auto;
+        position: relative;
+        left:0;
+        padding-top: 10px;
+        /* margin: 10px 20px; */
+        /* transition: 0.5s; */
+        cursor: pointer;
+        overflow: hidden;
+        
+     }
+     span{
+        font-size: 30px;
+     }
+     #fifth_div,#ninth_div,#twelvth_div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 98%;
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        font-size: 8px;
+        margin-top: 20px;
+    }
+    #sixth_div{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+#women_ass{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 9px;
+}
+#women_ass>div{
+    width: 90%;
+    text-align: center;
+    font-size: 8px;
+    margin: auto;
+}
+#women_ass>div img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(140, 152, 152, 0.832);
+}
+.beuty_div{
+    display: none;
+}
+#scroll_btn_11,#scroll_btn_12{
+    /* justify-content: left; */
+    margin-left: -410px;
+    margin-top: -30px;
+    font-size: 70px;
+}
+#scroll_btn_21, #scroll_btn_23{
+    font-size: 70px;
+    margin-top: -30px;
+}
+#seventh_div>h1, #eighth_div>h1{
+    font-size: 20px;
+}
+#scroll_btn_12{
+    margin-left: -430px;
+}
+#scroll_btn_13{
+    margin-left: -11px;
+    margin-top: -20px;
+    font-size: 70px;
+}
+#scroll_btn_24{
+    margin-left: 90px;
+    margin-top:-20px ;
+    font-size: 70px;
+}
+#scroll_btn_14{
+    margin-left: -11px;
+    margin-top: -20px;
+    font-size: 70px;
+}
+#scroll_btn_25{
+    margin-left: 90px;
+    margin-top:-20px ;
+    font-size: 70px;   
+}
+#scroll_btn_15{
+    margin-left: 0px;
+    margin-top: -20px;
+    font-size: 70px;
+}
+#scroll_btn_26{
+    margin-left: 90px;
+    margin-top:-20px ;
+    font-size: 70px;   
+}
+#container_7{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#scroll_btn_16{
+    margin-left: 0px;
+    margin-top: -20px;
+    font-size: 70px;
+}
+#scroll_btn_27{
+    margin-left: -12px;
+    margin-top:-20px ;
+    font-size: 70px;
+}
+#last div h1{
+    font-size: 12px;
+}
+}
 
 
 
