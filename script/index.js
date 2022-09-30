@@ -10,11 +10,14 @@ nabvar_div.innerHTML= navbar()
 // let footer_div = document.getElementById('footer')
 // footer_div.innerHTML= footer()
 
-let search_btn = document.getElementById('let search_btn')
-let searchbar = document.getElementById('searchbar').value;
+let search_btn = document.getElementById('search_btn')
+
+console.log(searchbar)
  search_btn = document.addEventListener('click', function(){
     console.log("gaga")
+    let searchbar = document.getElementById('searchbar').value;
    localStorage.setItem('search_item', JSON.stringify(searchbar))
+   window.location.href='./search.html'
 })
 
 var arr = [
@@ -957,4 +960,8 @@ scroll_btn_16.addEventListener('click', function(){
      
     right.scrollBy(-1000,400)
 })
+
+
+
+
 
