@@ -28,7 +28,7 @@ form.addEventListener("submit",function(event){
        window.location.href="navbar.html"
    }
    else{
-       alert("user does not exist please signup first")
+       alert("user does not exist please create a account first")
        window.location.href="signin.html"
    }
  
