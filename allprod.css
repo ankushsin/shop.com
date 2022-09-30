@@ -36,9 +36,9 @@
 }
 
 
-img {
-    height: 300px;
-    width: 100%;
+.prodimg {
+    height: 250px;
+    width: 90%;
 }
 
 /* p {

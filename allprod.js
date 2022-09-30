@@ -4,6 +4,8 @@
 
 import {navbar} from "./components/navbar.js";
 
+
+
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("nav_sidebutton").addEventListener("click",function(){
     document.querySelector(".bg_modal").style.display = 'flex';
@@ -81,6 +83,7 @@ function append(data){
 
         //Sttributes or value
         image.src = el.image
+        image.classList.add("prodimg");
         // categoryP.innerText = el.category
         priceP.innerText = "$"+" "+el.price
         title.innerText = el.title
