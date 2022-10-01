@@ -1,8 +1,8 @@
 
 
-
-
 import {navbar} from "./components/navbar.js";
+
+
 
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("nav_sidebutton").addEventListener("click",function(){
@@ -81,6 +81,7 @@ function append(data){
 
         //Sttributes or value
         image.src = el.image
+        image.classList.add("prodimg");
         // categoryP.innerText = el.category
         priceP.innerText = "$"+" "+el.price
         title.innerText = el.title
@@ -105,6 +106,9 @@ function append(data){
         // buttonDiv.append(cartButton);
         contentDiv.append(title , priceP ,discount);
         mainDiv.append(imageDiv , contentDiv);
+        mainDiv.addEventListener("click",function(){
+            addtocart(el);
+        })
 
         //Append
         container.append(mainDiv);
@@ -113,6 +117,11 @@ function append(data){
 
 }
 
+let addtocart = (el) =>{
+    localStorage.setItem("the_shop_user_cart",JSON.stringify(el))
+    window.location.href="#"
+   
+}
 
 
 
@@ -161,4 +170,3 @@ filter.addEventListener("change",function(){
       append(filtered);
     }
   })
-
