@@ -1,7 +1,5 @@
 
 
-
-
 import {navbar} from "./components/navbar.js";
 
 
@@ -108,6 +106,9 @@ function append(data){
         // buttonDiv.append(cartButton);
         contentDiv.append(title , priceP ,discount);
         mainDiv.append(imageDiv , contentDiv);
+        mainDiv.addEventListener("click",function(){
+            addtocart(el);
+        })
 
         //Append
         container.append(mainDiv);
@@ -116,6 +117,11 @@ function append(data){
 
 }
 
+let addtocart = (el) =>{
+    localStorage.setItem("the_shop_user_cart",JSON.stringify(el))
+    window.location.href="#"
+   
+}
 
 
 
@@ -164,4 +170,3 @@ filter.addEventListener("change",function(){
       append(filtered);
     }
   })
-
