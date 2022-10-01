@@ -1,5 +1,5 @@
 
-    let descobj = JSON.parse(localStorage.getItem("desciption"));  //productId must be there
+    let descobj = JSON.parse(localStorage.getItem("clicked_item"));  //productId must be there
     
 
 
@@ -15,15 +15,15 @@
 
     function display(elem){
     
-    img.setAttribute("src",elem.imageUrl);
+    img.setAttribute("src",elem.img);
 
-    desc.innerText = elem.description
+    // desc.innerText = elem.description
     
-    name.innerText = elem.name
+    name.innerText = elem.Name;
     
     price.innerText += elem.price
     
-    stackedprice.innerText += elem.stackedPrice 
+    // stackedprice.innerText += elem.stackedPrice 
     
     rating.innerText += elem.rating
 
@@ -65,7 +65,7 @@ function increment(){
         }else{
             data.push(descobj)
         localStorage.setItem("data",JSON.stringify(data))   //productId must be there
-        window.location.href="index.html"
+        window.location.href="cart.html"
         }
         
     })

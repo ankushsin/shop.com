@@ -28,5 +28,5 @@ function checkData(event){
 document.querySelector("form+button").addEventListener("click",cancel)
 
 function cancel(){
-    window.location.href = "index.html"
+    window.location.href = "cart.html"
 }
