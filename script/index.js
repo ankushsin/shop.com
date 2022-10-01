@@ -10,15 +10,20 @@ nabvar_div.innerHTML= navbar()
 // let footer_div = document.getElementById('footer')
 // footer_div.innerHTML= footer()
 
-let search_btn = document.getElementById('search_btn')
+let search_bt = document.querySelector('.s_button')
 
-console.log(searchbar)
- search_btn = document.addEventListener('click', function(){
-    console.log("gaga")
+
+ search_bt.onclick=(()=>{
+    // console.log("gaga")
     let searchbar = document.getElementById('searchbar').value;
+    // console.log(searchbar)
    localStorage.setItem('search_item', JSON.stringify(searchbar))
    window.location.href='./search.html'
-})
+
+ })
+
+
+
 
 var arr = [
     {
