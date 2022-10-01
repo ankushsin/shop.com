@@ -10,7 +10,7 @@ nabvar_div.innerHTML= navbar()
 // let footer_div = document.getElementById('footer')
 // footer_div.innerHTML= footer()
 
-let search_bt = document.querySelector('.s_button')
+let search_bt = document.getElementById('search_btn')
 
 
  search_bt.onclick=(()=>{
