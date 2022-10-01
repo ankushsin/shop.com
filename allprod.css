@@ -36,10 +36,12 @@
 }
 
 
+
 .prodimg {
   height: 250px;
   width: 90%;
 }
+
 
 /* p {
   text-align: center;
@@ -56,4 +58,8 @@ button {
 #product__div > div > div:nth-child(2) > div {
   display: flex;
   justify-content: center;
+
 }
+
+
+
