@@ -3,7 +3,11 @@ function navbar(){
     <div id="nav_container">
         <!-- 1st div -->
         <div id='logo'>
-            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="logo-img">
+        <a href="index.html">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="logo-img">
+        </a>
+        
+            
         </div>
         <!-- 2nd div -->
         <div>
@@ -33,10 +37,10 @@ function navbar(){
             <div>
                 <img id="nav_sidebutton" src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt="">
             </div>
-            <div><p>Categories</p></div>
+            <div id="ttttt"><p>Categories</p></div>
         </div>
         <!-- 5th div -->
-        <div>
+        <div id="brand-names">
             <div><p>Exclusive Brands</p></div>
             <div><p>Stores</p></div>
             <div><p>Deals</p></div>
@@ -49,14 +53,14 @@ function navbar(){
         <div id="right_nav">
             <div id="navsign-in">
                 <div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div>
-                <div><p>Sign in</p></div>
+                <div><span id="n"></span></div>
             </div>
             <div>
                 <div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div>
                 <div><p>Orders</p></div>
             </div>
             <div>
-                <div> <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div>
+                <div id="addcart"><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div>
                 <div> <p>Cart</p></div>
             </div>
         </div>
@@ -102,11 +106,14 @@ function navbar(){
                     </div>
                     <hr>
                     <div><h3><a href="./login.html">Signin / login</a></h3></div>
-                   <div><h3><a href="">Sing Up/Register</a></h3></div>
+                   <div><h3><a href="./signin.html">Sing Up/Register</a></h3></div>
                 </div>
             </div>
         </div>
-    </div>`;
+    </div>
+    
+    
+    `;
  }
 
 export default navbar

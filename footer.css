@@ -1,0 +1,75 @@
+.footer-box{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 150px;
+    background-color: #545871;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#box0{
+    margin-top: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+#box3{
+    display: flex;
+    align-items: center;
+}
+#box4{
+    display: flex;
+    justify-content: space-between;
+}
+#box6 img{
+    width: 2%;
+}
+.btn{
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F0F1F7;
+    
+}
+#box5 a u:hover{
+    cursor: pointer;
+color: skyblue;
+}
+input{
+    padding: 5px 10px;
+}
+#sign{
+    color: black;
+}
+.cart-footer{
+margin-top: 30px;
+/* border: 1px solid black; */
+height:auto;
+background-color: #F0F1F7;
+}
+.copyright{
+margin-bottom: 5px;
+margin-left: 15px;
+background-color: #F0F1F7;
+}
+.copyright a{
+text-decoration: none;
+color: black;
+}
+.copyright a:hover{
+cursor: pointer;
+color: skyblue;
+}
+#patent{
+font-size: 14px;
+margin-top: 10px;
+margin-bottom: 5px;
+margin-left: 5px;
+background-color: #F0F1F7;
+}
+#last{
+background-color:#F0F1F7;;
+}

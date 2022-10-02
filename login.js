@@ -1,35 +1,30 @@
 
 
 
-var form=document.querySelector("form");
-var userdata=JSON.parse(localStorage.getItem("userData"));
 
 
+let login = document.getElementById('stbtn')
 
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-     
-    var data={
-       
-       email:form.email.value,
-       password:form.pass.value,
-   }
-
-   if(userdata==null)
-   {
-       alert("please create an account");
-       window.location.href="signin.html"
-
-   }
-   else if(userdata.email==data.email && userdata.password==data.password)
-   {
-       alert("login succesfull");
-       localStorage.setItem("signin",JSON.stringify(userdata));
-       window.location.href="navbar.html"
-   }
-   else{
-       alert("user does not exist please create a account first")
-       window.location.href="signin.html"
-   }
+login.addEventListener("click",function(event){
+     event.preventDefault();
+    let email= document.getElementById('login_email').value;
+    let pass= document.getElementById('login_password').value;
+   
+  let userDetails = JSON.parse(localStorage.getItem('userDetails'))
+ if(email==userDetails.email){
+    if(pass==userDetails.password){
+        alert(`Welcome ${userDetails.name}`)
+        window.location.href='index.html'
+    }else{
+    alert('Put right details')
+ }
+ }
  
 });
+// import footer from '../components/footer.js';
+
+// let v = document.getElementById('footer')
+
+// v.innerHTML=footer();
+
+

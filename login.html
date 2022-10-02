@@ -4,38 +4,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./signinlogin.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
 </head>
+<style>
+    #container{
+          /* margin: auto; */
+          margin-top: 50px;
+          /* background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ); */
+          display: flex;
+          width: 45%;
+          height: auto;
+          margin-left: 190px;
+          
+          border-radius: 15px;
+          /* margin-top: 250px; */
+          /* padding-bottom: 20px; */
+        }
+        h1{
+          font-size: 25px;
+          margin-bottom: -30px;
+        }
+
+          form{
+              display: grid;
+              grid-template-columns: repeat(1,fr);
+              margin: auto;
+              width: 80%;
+              font-weight: lighter;
+              color: rgba(0, 0, 0, 0.514);
+
+          }
+        
+          input{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            /* margin-bottom: 40px; */
+            border: 0.5px solid rgba(0, 0, 0, 0.43);
+            outline: none;
+            background-color: none;
+            /* border-bottom: 1px solid rgb(240, 6, 80); */
+            background: transparent;
+           margin-bottom: 19px;
+            
+          }
+          #top{
+            /* margin-bottom: 20px; */
+            /* border: 2px solid red; */
+            width: 60%;
+            margin: auto;
+            height: 90%;
+          }
+          #stbtn{
+        
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            /* background-image: conic-gradient(from 36deg at 20% 40% , rgb(255, 0, 0) 0%, #0c0707 25%, rgb(17, 17, 253) 30%);  */
+            color: white;
+            width: 80%;
+            padding: 10px 3px 10px 3px;
+            border: none;
+            margin-top: 20px;
+            background: #414467;
+
+          }
+          #stbtn:hover{
+            cursor: pointer;
+            background: #25283d;
+            color: white;
+            font-weight: bold;
+          }
+          #ndbtn{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            /* background-image: conic-gradient(from 36deg at 20% 40% , rgb(255, 0, 0) 0%, #0c0707 25%, rgb(17, 17, 253) 30%);  */
+            color: rgb(11, 10, 10);
+            width: 60%;
+            padding: 10px 3px 10px 3px;
+            border: 1px solid rgb(24, 24, 48);
+            margin-top: -35px;
+            background-color:white;
+
+          }
+          #ndbtn:hover{
+            cursor: pointer;
+            background: #2b2e45;
+            color: white;
+            font-weight: bold;
+          }
+          #create{
+            width: 50%;
+            margin-left: 30px;
+          }
+          p{
+            margin: auto;
+            font-size: 15px;
+            margin-top: 45px;
+            text-align: center;
+            margin-bottom: 50px;
+          }
+          #stbt:hover{
+            cursor: pointer;
+            background: #121427;
+            color: white;
+            font-weight: bold;
+            
+          }
+          .home{
+            text-align: center;
+          font-size: 10px;
+          margin-top: 10px;
+
+          }
+          #yt{
+            width: 10%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+          }
+          a{
+            text-decoration: none;
+          }
+          p{
+           text-align: left;
+          }
+          #log{
+            margin-left: 230px;
+          }
+          img{
+            width: 8%;
+            display: flex;
+            margin: auto;
+          }
+  
+
+</style>
 <body>
-    <div class="wrapper">
-      <div class="title-text">
-        <div class="title login">Signin </div>
-       
-      </div>
-      <div class="form-container">
-      
-        <div class="form-inner">
-          <form action="#" class="login">
-            <div class="field">
-              <input  id="email" type="text" placeholder="Email Address" >
-            </div>
-            <div class="field">
-              <input  id="pass" type="password" placeholder="Password">
-            </div>
-            <div class="pass-link"><a href="#">Forgot password?</a></div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Login">
-            </div>
-            <div class="signup-link">Not a member? <a href="signin.html">Create a new account</a></div>
-          </form>
-          </div>
-          <div>
+  <a href="index.html">
+     <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+  </a>
+ 
+    <h1 id="log">
+        Signin
+      </h1>
+        <div id="container">
+        
+    
+          <div id="top">
+            
+            <form action="">
+             <label for="">Email address: </label>  
+            <input type="email" id="login_email" placeholder="username">
+            <label for="">Password:</label>
+            <input type="password" id="login_password" placeholder="password">
+         </form>
+           <!-- <button id="stbtn" onclick="Login()">LOGIN</button> -->
+           <button id="stbtn" >LOGIN</button>
             
           </div>
-      </div>
-    </div>
+          <div id="create">
+            <h1>Don't have an account?</h1>
+            <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50% Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive emails and more. <a href="#">Learn More</a></p>
+            <a href="signin.html"><button  id="ndbtn">Create your new account</button></a>
+      
+    
+          </div>
+          
+         
+        </div> 
+        <div id="footer"></div>
+    
 </body>
 </html>
-<script src="./login.js"></script>
+<script  src="login.js"></script>

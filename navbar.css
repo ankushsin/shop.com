@@ -15,6 +15,9 @@ body{
     "d e e e f f";
     box-shadow: rgba(99, 99, 99, 0.456) 0px 2px 8px 0px;
 }
+#navsign-in>div:nth-of-type(2){
+    margin-top: 20px;
+}
 #nav_container> div:nth-child(1) {
     grid-area: a;
     text-align: center;
@@ -69,7 +72,7 @@ body{
 #searchbar{
     margin-top: 20px;
     width: 350px;
-    height: 39px;
+    height: 31px;
     font-size: 15px;
     /* margin-right: 20px; */
 }

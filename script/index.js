@@ -17,7 +17,7 @@ var arr = [
     {
     Name:"AXIS Nutrition™ Advanced Digestive Support",
     img:'https://www.shop.com/feo-cdn/Q/S/gYyQJsTec.webp',
-    price:'$52.95',
+    price:'52.95',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'5',
     order:'Free shipping with $99 orders',
@@ -26,7 +26,7 @@ var arr = [
     Name:"AXIS Nutrition™ Mental Emotional Balance",
     img:'https://www.shop.com/feo-cdn/M/B/yKQVxvGw0.webp',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$39.95',
+    price:'39.95',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -34,7 +34,7 @@ var arr = [
     Name:"Shopping Annuity® Brand Premium Apple Cider Vinegar + Ginger",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/Z/n/MMp93vyNc.webp',
-    price:'$71.535',
+    price:'71.535',
     rating:'3.8',
     order:'Free shipping with $99 orders'
 },
@@ -42,7 +42,7 @@ var arr = [
     Name:"AXIS Nutrition™ Advanced Digestive Support",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/A/n/V-cTSXpyY.webp',
-    price:'$49.95',
+    price:'49.95',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
@@ -50,7 +50,7 @@ var arr = [
     Name:'AXIS Nutrition™ Advanced Digestive Support',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/1/9/lZlESoF2o.webp',
-    price:'$52.95',
+    price:'52.95',
     rating:'4.3',
     order:'Free shipping with $99 orders'
 },
@@ -58,7 +58,7 @@ var arr = [
     Name:'AXIS Nutrition™ Advanced Digestive Support',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/7/a/PtDidZj7Q.webp',
-    price:'$55.35',
+    price:'55.35',
     rating:'4',
     order:'Free shipping with $99 orders'
 },
@@ -87,7 +87,7 @@ function display(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -138,7 +138,7 @@ var arr2 = [
     {
     Name:"Motives® LALA Pop of LALA Pressed Pigment Palette",
     img:'https://www.shop.com/feo-cdn/9/N/6w7SnOjhk.webp',
-    price:'$79.95',
+    price:'79.95',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'3.1',
     order:'Free shipping with $99 orders',
@@ -147,7 +147,7 @@ var arr2 = [
     Name:"Motives® LALA Pop of LALA Pressed Pigment Palette",
     img:'https://www.shop.com/feo-cdn/2/P/c_nL08pSU.webp',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$81.35',
+    price:'81.35',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
@@ -155,7 +155,7 @@ var arr2 = [
     Name:"Motives® 30th Anniversary Lip Collection",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/P/h/sfWYV9OoM.webp',
-    price:'$39.95',
+    price:'39.95',
     rating:'4',
     order:'Free shipping with $99 orders'
 },
@@ -163,7 +163,7 @@ var arr2 = [
     Name:"Motives® Essential Complexion 4-Piece Brush Set",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/J/o/q03wvC3-k.webp',
-    price:'$51.25',
+    price:'51.25',
     rating:'3.2',
     order:'Free shipping with $99 orders'
 },
@@ -171,7 +171,7 @@ var arr2 = [
     Name:'Motives® 30th Anniversary Lip Collection',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/v/O/MT-blwReI.webp',
-    price:'$22.85',
+    price:'22.85',
     rating:'4.0',
     order:'Free shipping with $99 orders'
 },
@@ -179,7 +179,7 @@ var arr2 = [
     Name:'Motives® 30th Anniversary Lip Collection',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/I/L/_eZgaY-e8.webp',
-    price:'$62.95',
+    price:'62.95',
     rating:'4.6',
     order:'Free shipping with $99 orders'
 },
@@ -209,7 +209,7 @@ function display2(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -241,11 +241,12 @@ scroll_btn_11.addEventListener('click', function(){
 })
 
 
+
 var arr3 = [
     {
     Name:"SELENA – Pave Cuban Link Chain",
     img:'https://www.shop.com/feo-cdn/Z/0/frkGwoR9Q.webp',
-    price:'$44.95',
+    price:'44.95',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'4.3',
     order:'Free shipping with $99 orders',
@@ -254,7 +255,7 @@ var arr3 = [
     Name:"ELOISE – Classic Ear Cuff",
     img:'https://img.shop.com/Image/280000/282000/282022/products/1943471817.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$50.35',
+    price:'50.35',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -262,7 +263,7 @@ var arr3 = [
     Name:"SEBASTIAN – Slider Hoops",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/280000/282000/282022/products/1943471807.jpg?plain&size=1600x1600',
-    price:'$77.95',
+    price:'77.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },
@@ -270,7 +271,7 @@ var arr3 = [
     Name:"HARPER – Ultra Wide Herringbone",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/0/_/VprE2fTGM.webp',
-    price:'$63.91',
+    price:'63.91',
     rating:'3',
     order:'Free shipping with $99 orders'
 },
@@ -278,7 +279,7 @@ var arr3 = [
     Name:'DAWSON – Dome Ring',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/p/A/S3xqvwH-w.webp',
-    price:'$46.35',
+    price:'46.35',
     rating:'4.4',
     order:'Free shipping with $99 orders'
 },
@@ -286,7 +287,7 @@ var arr3 = [
     Name:'SELENA – Pave Cuban Link Bracelet',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/280000/282000/282022/products/1943471988.jpg?plain&size=1600x1600',
-    price:'$79.95',
+    price:'79.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },
@@ -294,28 +295,28 @@ var arr3 = [
     Name:'VIVIAN – Pave Ear Cuff',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/Y/V/GNuS2-E3A.webp',
-    price:'$59.95',
+    price:'59.95',
     rating:'4',
     order:'Free shipping with $99 orders'
 },{
     Name:'DAPHNE – Freshwater Pearl Drop Huggie Earrings',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/D/k/y-YWZxRbY.webp',
-    price:'$49.73',
+    price:'49.73',
     rating:'4.6',
     order:'Free shipping with $99 orders'
 },{
     Name:'EMERSON – Emerald Cut Rope Loop Earrings',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/280000/282000/282022/products/1943471762.jpg?plain&size=1600x1600',
-    price:'$26.45',
+    price:'26.45',
     rating:'4.2',
     order:'Free shipping with $99 orders'
 },{
     Name:'JAMES – Thin Hammered Ring Trio',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/280000/282000/282022/products/1943471705.jpg?plain&size=1600x1600',
-    price:'$59.95',
+    price:'59.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },
@@ -383,7 +384,7 @@ var arr4 = [
     {
     Name:"DNA Miracles Isotonix® Multivitamin",
     img:'https://www.shop.com/feo-cdn/r/8/khZouRrxs.webp',
-    price:'$49.95',
+    price:'49.95',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'4.1',
     order:'Free shipping with $99 orders',
@@ -392,7 +393,7 @@ var arr4 = [
     Name:"DNA Miracles Isotonix® Immune",
     img:'https://img.shop.com/Image/250000/250100/250199/products/1332818472.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$51.25',
+    price:'51.25',
     rating:'4.4',
     order:'Free shipping with $99 orders'
 },
@@ -400,7 +401,7 @@ var arr4 = [
     Name:"DNA Miracles OPC-3® Chews",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/Z/K/W8b5TLOH8.webp',
-    price:'$44.95',
+    price:'44.95',
     rating:'3.0',
     order:'Free shipping with $99 orders'
 },
@@ -408,7 +409,7 @@ var arr4 = [
     Name:"DNA Miracles® Essential Omega 3",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/Q/O/QsMx678To.webp',
-    price:'$72.95',
+    price:'72.95',
     rating:'3.5',
     order:'Free shipping with $99 orders'
 },
@@ -416,7 +417,7 @@ var arr4 = [
     Name:'DNA Miracles® Chewable Probiotics',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/250000/250100/250199/products/1065616466.jpg?plain&size=1600x1600',
-    price:'$54.95',
+    price:'54.95',
     rating:'4.4',
     order:'Free shipping with $99 orders'
 },
@@ -424,7 +425,7 @@ var arr4 = [
     Name:'DNA Miracles® Chewable Multivitamin',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/A/u/6pPbdttKI.webp',
-    price:'$59.95',
+    price:'59.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },
@@ -432,7 +433,7 @@ var arr4 = [
     Name:'DNA Miracles Isotonix® Digestive Enzymes',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/250000/250100/250199/products/1021314379.jpg?plain&size=1600x1600',
-    price:'$67.35',
+    price:'67.35',
     rating:'4.5',
     order:'Free shipping with $99 orders'
 }
@@ -503,7 +504,7 @@ var arr5 = [
     {
     Name:"Smart Blonde Outdoor Decor Happy Fall Novelty Metal Arrow Sign A-182",
     img:'https://www.shop.com/feo-cdn/5/4/o6KxJw2XU.webp',
-    price:'$52.91',
+    price:'52.91',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'4.2',
     order:'Free shipping with $99 orders',
@@ -512,7 +513,7 @@ var arr5 = [
     Name:"9.25 Spooky Ghost Trio Halloween Decoration",
     img:'https://img.shop.com/Image/240000/248000/248061/products/1945230842.jpg?plain&size=2000x2000',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$52.05',
+    price:'52.05',
     rating:'4.0',
     order:'Free shipping with $99 orders'
 },
@@ -520,7 +521,7 @@ var arr5 = [
     Name:"Set of 12 Crackled and Glittered Fall Pumpkin, Gourd, Berry, Pine Cone Decoration Set",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/-/g/aUSLil4Hc.webp',
-    price:'$78.95',
+    price:'78.95',
     rating:'4.0',
     order:'Free shipping with $99 orders'
 },
@@ -528,7 +529,7 @@ var arr5 = [
     Name:"Costway 12 Ft Halloween Inflatable Ghost Yard Decoration w/ Built-in LED Lights",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/280000/284400/284458/products/1912508831.jpg?plain&size=2000x2000',
-    price:'$44.95',
+    price:'44.95',
     rating:'3.6',
     order:'Free shipping with $99 orders'
 }
@@ -605,7 +606,7 @@ var arr6 = [
     Name:"Heart Health™ Essential Omega III Fish Oil with Vitamin E",
     img:'https://img.shop.com/Image/210000/214100/214199/products/561800368.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$45.98',
+    price:'45.98',
     rating:'3.5',
     order:'Free shipping with $99 orders'
 },
@@ -613,7 +614,7 @@ var arr6 = [
     Name:"Isotonix® Multivitamin Without Iron",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/1604659974.jpg?plain&size=1600x1600',
-    price:'$74.89',
+    price:'74.89',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
@@ -621,7 +622,7 @@ var arr6 = [
     Name:"Isotonix® Activated B Complex",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/604981550.jpg?plain&size=1600x1600',
-    price:'$73.22',
+    price:'73.22',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -629,7 +630,7 @@ var arr6 = [
     Name:'Isotonix® Vitamin D with K2',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/561800345.jpg?plain&size=1600x1600',
-    price:'$45.34',
+    price:'45.34',
     rating:'4.5',
     order:'Free shipping with $99 orders'
 },
@@ -637,7 +638,7 @@ var arr6 = [
     Name:'Probiotics-10',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/4/s/QBt9Iym3I.webp',
-    price:'$52.65',
+    price:'52.65',
     rating:'3',
     order:'Free shipping with $99 orders'
 },
@@ -645,21 +646,21 @@ var arr6 = [
     Name:'NutriClean® Advanced Fiber Powder with Stevia',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/240000/243300/243382/products/978316780.jpg?plain&size=1600x1600',
-    price:'$69.95',
+    price:'69.95',
     rating:'4',
     order:'Free shipping with $99 orders'
 },{
     Name:'Heart Health™ Advanced Co-Q10 (Cardiovascular & Immune Support)',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214199/products/561800367.jpg?plain&size=1600x1600',
-    price:'$58.95',
+    price:'58.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },{
     Name:'Isotonix® Magnesium',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/792868342.jpg?plain&size=1600x1600',
-    price:'$39.95',
+    price:'39.95',
     rating:'5',
     order:'Free shipping with $99 orders'
 },{
@@ -742,7 +743,7 @@ var arr7 = [
     Name:"Isotonix® Daily Essentials Packets",
     img:'https://img.shop.com/Image/210000/214100/214196/products/935461732.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$45.98',
+    price:'45.98',
     rating:'3.5',
     order:'Free shipping with $99 orders'
 },
@@ -750,7 +751,7 @@ var arr7 = [
     Name:"Ultimate Aloe™",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/240000/243300/243396/products/603891601.jpg?plain&size=1600x1600',
-    price:'$64.89',
+    price:'64.89',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
@@ -758,7 +759,7 @@ var arr7 = [
     Name:"Isotonix® Digestive Enzymes with Probiotics (Packets)",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/561800354.jpg?plain&size=1600x1600',
-    price:'$83.22',
+    price:'83.22',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -766,7 +767,7 @@ var arr7 = [
     Name:"Isotonix® Digestive Enzymes with Probiotics",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/1301699648.jpg?plain&size=1600x1600',
-    price:'$72.22',
+    price:'72.22',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -826,7 +827,7 @@ var arr8 = [
     Name:"DNA Miracles Isotonix® Immune",
     img:'https://img.shop.com/Image/250000/250100/250199/products/1332818472.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$39.95',
+    price:'39.95',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -834,7 +835,7 @@ var arr8 = [
     Name:"ClearShield® Maximum Protection and Hydration",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214200/214267/products/559010729.jpg?plain&size=1600x1600',
-    price:'$71.535',
+    price:'71.535',
     rating:'3.8',
     order:'Free shipping with $99 orders'
 },
@@ -842,7 +843,7 @@ var arr8 = [
     Name:"Isotonix® Vitamin C",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/561800360.jpg?plain&size=1600x1600',
-    price:'$78.95',
+    price:'78.95',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
@@ -850,7 +851,7 @@ var arr8 = [
     Name:'Snap™ All-Purpose Natural Concentrate',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/240000/243300/243390/products/559053516.jpg?plain&size=1600x1600',
-    price:'$52.95',
+    price:'52.95',
     rating:'4.3',
     order:'Free shipping with $99 orders'
 },
@@ -858,7 +859,7 @@ var arr8 = [
     Name:'AXIS Nutrition™ Advanced Digestive Support',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://www.shop.com/feo-cdn/7/a/PtDidZj7Q.webp',
-    price:'$55.35',
+    price:'55.35',
     rating:'4',
     order:'Free shipping with $99 orders'
 },
@@ -866,7 +867,7 @@ var arr8 = [
     Name:"DNA Miracles Isotonix® Immune",
     img:'https://img.shop.com/Image/250000/250100/250199/products/1332818472.jpg?plain&size=1600x1600',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
-    price:'$39.95',
+    price:'39.95',
     rating:'4.1',
     order:'Free shipping with $99 orders'
 },
@@ -874,7 +875,7 @@ var arr8 = [
     Name:"ClearShield® Maximum Protection and Hydration",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214200/214267/products/559010729.jpg?plain&size=1600x1600',
-    price:'$71.535',
+    price:'71.535',
     rating:'3.8',
     order:'Free shipping with $99 orders'
 },
@@ -882,14 +883,14 @@ var arr8 = [
     Name:"Isotonix® Vitamin C",
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     img:'https://img.shop.com/Image/210000/214100/214196/products/561800360.jpg?plain&size=1600x1600',
-    price:'$78.95',
+    price:'78.95',
     rating:'3.9',
     order:'Free shipping with $99 orders'
 },
 {
     Name:"Isotonix OPC-3®",
     img:'https://img.shop.com/Image/210000/214100/214196/products/561800349.jpg?plain&size=1600x1600',
-    price:'$52.95 - $70.23',
+    price:'52.95 - $70.23',
     rating_img:'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png',
     rating:'5',
     order:'Free shipping with $99 orders',
@@ -968,6 +969,46 @@ let search_bt = document.getElementById('search_btn')
     let searchbar = document.getElementById('searchbar').value;
     console.log(searchbar)
    localStorage.setItem('search_item', JSON.stringify(searchbar))
-   window.location.href='./search.html'
+   window.location.href='./allproducts.html'
 
  })
+ let addcart = document.getElementById('addcart')
+ addcart.onclick=(()=>{
+    console.log("gaga")
+   window.location.href='./ankit/cart.html'
+
+ })
+
+ document.getElementById("nav_sidebutton").addEventListener("click",function(){
+    console.log('yes')
+    document.querySelector(".bg_modal").style.display = 'flex';
+});
+
+// let nav_sidebutton = document.getElementById('nav_sidebutton')
+// nav_sidebutton.onclick = function(){
+//     console.log('yes')
+// }
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".bg_modal").style.display = 'none';
+})
+document.getElementById("navsign-in").addEventListener("click",function(){
+    document.querySelector("#nav_signin_right").style.display = 'flex';
+});
+document.querySelector(".close_signin").addEventListener("click",function(){
+    document.querySelector("#nav_signin_right").style.display = 'none';
+})
+
+let userDetails= JSON.parse(localStorage.getItem('userDetails'))||[]
+let n = document.getElementById('n')
+n.innerText=userDetails.name || 'Sign In';
+
+import footer from '../components/footer.js';
+
+let v = document.getElementById('footer')
+
+v.innerHTML=footer();
+
+let gogogog = document.getElementById('gogogog')
+gogogog.onclick=()=>{
+   window.location.href='login.html'
+}

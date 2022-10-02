@@ -4,9 +4,12 @@ body{
     
 }
 #navbar{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
-    /* margin-top: -140px; */
+   
+    box-shadow: rgba(59, 63, 67, 0.2) 0px 8px 24px;
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
     
     
 }
@@ -17,6 +20,13 @@ body{
 a{
     color: black;
 }
+#searchbar{
+    padding: -10px;
+
+}
+#gogogog{
+    cursor: pointer;
+}
 img{
     cursor: pointer;
 }
@@ -24,6 +34,9 @@ span:hover{
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.056);
 
+}
+#n{
+    margin-top: 30px;
 }
 /* -----------TOP DIV--------- */
 #shop1{

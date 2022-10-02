@@ -1,5 +1,11 @@
 
-    let descobj = JSON.parse(localStorage.getItem("clicked_item"));  //productId must be there
+   import navbar from '../components/navbar.js';
+
+
+   let nabvar_div = document.getElementById('navbar')
+   nabvar_div.innerHTML= navbar()
+   
+   let descobj = JSON.parse(localStorage.getItem("clicked_item"));  //productId must be there
     
 
 
@@ -60,23 +66,54 @@ function increment(){
        ;
         
     }
-    let data=JSON.parse(localStorage.getItem("data"))||[];
+    
+
+    
     document.querySelector("#cart").addEventListener("click",function(){
-        if(check()){
-            alert("Already Added In Your Cart")
-        }else{
-            data.push(descobj)
-        localStorage.setItem("data",JSON.stringify(data))   //productId must be there
-        window.location.href="cart.html"
-        }
-        
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let clicked_item = JSON.parse(localStorage.getItem('clicked_item'))||[];
+       cart.push(clicked_item)
+            localStorage.setItem('cart', JSON.stringify(cart))
+       alert("Add to Cart Successfull")
     })
 
-    function check(){
-        for(let i=0; i<data.length; i++){
-            if(data[i].productID == descobj.productID){
-                return true;
-            }
-        }
-        return false;
-    } 
+
+    document.querySelector(".close").addEventListener("click",function(){
+        document.querySelector(".bg_modal").style.display = 'none';
+    })
+    document.getElementById("navsign-in").addEventListener("click",function(){
+        document.querySelector("#nav_signin_right").style.display = 'flex';
+    });
+    document.querySelector(".close_signin").addEventListener("click",function(){
+        document.querySelector("#nav_signin_right").style.display = 'none';
+    })
+    
+    let userDetails= JSON.parse(localStorage.getItem('userDetails'))||[]
+    let n = document.getElementById('n')
+    n.innerText=userDetails.name || 'Sign In';
+
+
+    let search_bt = document.getElementById('search_btn')
+
+
+ search_bt.onclick=(()=>{
+    console.log("gaga")
+    let searchbar = document.getElementById('searchbar').value;
+    console.log(searchbar)
+   localStorage.setItem('search_item', JSON.stringify(searchbar))
+   window.location.href='./allproducts.html'
+
+ })
+    
+ let addcart = document.getElementById('addcart')
+ addcart.onclick=(()=>{
+    console.log("gaga")
+   window.location.href='./cart.html'
+
+ })
+
+ import footer from '../components/footer.js';
+
+let v = document.getElementById('footer')
+
+v.innerHTML=footer();

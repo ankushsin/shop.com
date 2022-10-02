@@ -1,41 +1,201 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Login & Signup </title>
-    <link rel="stylesheet" href="./signinlogin.css">
-  
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="title-text">
-       
-        <div class="title signup">Create a New Account </div>
-      </div>
-      <div class="form-container">
-        <div class="form-inner">
-          <form action="#" class="signup">
-            <div class="field">
-              <input id="email" type="text" placeholder="Email Address" >
-            </div>
-            <div class="field">
-              <input id="pass"  type="password" placeholder="Password" >
-            </div>
-            <div class="field">
-              <input id="confirm" type="password" placeholder="Confirm password" >
-            </div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Signup">
-            </div>
-          </form>
-        </div>
-    </div>
-   
- </div>
-    <script src="./signin.js">
-     
-    </script>
 
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+    <style>
+         #container{
+          margin: auto;
+          margin-top: 50px;
+          /* background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ); */
+          display: flex;
+          width: 60%;
+          height: auto;
+          margin-left: 280px;
+          
+          border-radius: 15px;
+          /* margin-top: 250px; */
+          /* padding-bottom: 20px; */
+        }
+        h1{
+          font-size: 25px;
+          margin-bottom: -30px;
+        }
+
+          form{
+              display: grid;
+              grid-template-columns: repeat(1,fr);
+              margin: auto;
+              width: 100%;
+              font-weight: lighter;
+              color: rgba(0, 0, 0, 0.514);
+
+          }
+        
+          input{
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            /* margin-bottom: 40px; */
+            border: 0.5px solid rgba(0, 0, 0, 0.43);
+            outline: none;
+            background-color: none;
+            /* border-bottom: 1px solid rgb(240, 6, 80); */
+            background: transparent;
+           margin-bottom: 19px;
+            
+          }
+          #top{
+            /* margin-bottom: 20px; */
+            /* border: 2px solid red; */
+            width: 60%;
+            margin: auto;
+            height: 90%;
+          }
+          #register{
+        
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* margin: auto; */
+            margin-bottom: 30px;
+            border-radius: 15px;
+            /* background-image: conic-gradient(from 36deg at 20% 40% , rgb(255, 0, 0) 0%, #0c0707 25%, rgb(17, 17, 253) 30%);  */
+            color: white;
+            width: 70%;
+            padding: 10px 3px 10px 3px;
+            border: none;
+            margin-top: 20px;
+            background: #414467;
+
+          }
+          #register:hover{
+            cursor: pointer;
+            background: #25283d;
+            color: white;
+            font-weight: bold;
+          }
+          #ndbtn{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            /* background-image: conic-gradient(from 36deg at 20% 40% , rgb(255, 0, 0) 0%, #0c0707 25%, rgb(17, 17, 253) 30%);  */
+            color: rgb(11, 10, 10);
+            width: 60%;
+            padding: 10px 3px 10px 3px;
+            border: 1px solid rgb(24, 24, 48);
+            margin-top: -35px;
+            background-color:white;
+
+          }
+          #ndbtn:hover{
+            cursor: pointer;
+            background: #2b2e45;
+            color: white;
+            font-weight: bold;
+          }
+          #create{
+            width: 50%;
+            margin-left: 30px;
+          }
+          p{
+            margin: auto;
+            font-size: 15px;
+            margin-top: 45px;
+            text-align: center;
+            margin-bottom: 50px;
+          }
+        
+          .home{
+            text-align: center;
+          font-size: 10px;
+          margin-top: 10px;
+
+          }
+          #yt{
+            width: 10%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+          }
+          a{
+            text-decoration: none;
+          }
+          p{
+           text-align: left;
+          }
+          #log{
+            margin-left: 230px;
+          }
+          #box{
+            display: flex;
+            /* justify-content: left; */
+            /* margin-left: -140px; */
+            margin-top: 40px;
+            
+          }
+          #box input{
+            width: 30px;
+          }
+          h1{
+            color: rgba(0, 0, 0, 0.797);
+          }
+          #create{
+            margin-left: 320px;
+            font-size: 26px;
+
+          }
+  
+    </style>
+</head>
+<body>
+  <div id="navbar">
+
+  </div>
+    <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" id="yt">
+  <h1 id="create">Create Account</h1>
+  <div id="container">
+    <div id="regester-form">
+        <form action="">    
+          <label for="">Enter Name</label>
+        <input type="name" id="name" placeholder="name*" required>
+        <label for="">Email address*</label>
+        <input type="email" id="email" placeholder="email*" required>
+        <label for="">Password* (At least 7 characters)</label>
+        <input type="password" id="password" placeholder="password*" required >
+        <input type="password" id="password2" placeholder="password*" required >
+        <h1>Text Message (SMS) Alerts: (Optional)</h1>
+        <div id="box">
+           <input  type="checkbox"> Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.)
+        </div>
+       
+        <input type="number" id="mobile" placeholder="mobile*" required>
+        <input type="text" id="description" placeholder="description">
+        <button id="register" >Register</button>
+        </form>
+        
+        <p>Already have an account?  <a href="login.html">login</a></p>
+    </div>
+    
+</div>
+<div id="footer">
+
+</div>
+    
+</body>
 </html>
+<script src="signin.js"></script>
