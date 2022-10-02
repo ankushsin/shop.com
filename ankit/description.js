@@ -15,30 +15,32 @@
 
     function display(elem){
     
-    img.setAttribute("src",elem.img);
+    img.setAttribute("src",elem.img||elem.image);
 
     // desc.innerText = elem.description
     
-    name.innerText = elem.Name;
+    name.innerText = elem.Name || elem.title;
     
     price.innerText += elem.price
     
+    
     // stackedprice.innerText += elem.stackedPrice 
     
-    rating.innerText += elem.rating
+    rating.innerText = elem.rating.rate||elem.rating ; 
+    
 
-    img.addEventListener("mouseover",mouseOn)
-    function mouseOn(){
-        img.style.cursor = "pointer"
-        img.setAttribute("src",elem.hoverUrl)
-    }
+    // img.addEventListener("mouseover",mouseOn)
+    // function mouseOn(){
+    //     img.style.cursor = "pointer"
+    //     img.setAttribute("src",elem.hoverUrl)
+    // }
 
-    img.addEventListener("mouseout",mouseoff)
-    function mouseoff(){
-        img.setAttribute("src",elem.imageUrl)
-    }
+    // img.addEventListener("mouseout",mouseoff)
+    // function mouseoff(){
+    //     img.setAttribute("src",elem.imageUrl)
+    // }
 }
-
+console.log(price)
 
 let countd = document.querySelector("button+span")
 

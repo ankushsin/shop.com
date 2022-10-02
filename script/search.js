@@ -5,7 +5,7 @@
 
 console.log('haha')
 const container_div=document.getElementById("container");
-const searchVedios = async ()=> {
+const searchItems = async ()=> {
     try{
         //  const qurey=document.getElementById("query").value;
 
@@ -16,7 +16,7 @@ const searchVedios = async ()=> {
         actual_data=data;
 
        console.log(actual_data)
-        appendVideos(actual_data)  
+        appendData(actual_data)  
 
     }
     catch(error){
@@ -24,14 +24,18 @@ const searchVedios = async ()=> {
     }
 
 };
-searchVedios()
+searchItems()
   
 
-const appendVideos=(data)=> {
+const appendData=(data)=> {
     const container_div=document.getElementById("container");
     container_div.innerHTML=null;
     data.forEach((ele)=>{
         let div = document.createElement('div')
+        div.addEventListener('click',()=>{
+            localStorage.setItem('clicked_item',JSON.stringify(ele))
+            window.location.href='./ankit/description.html'
+        })
 
         let img = document.createElement('img');
         img.src=ele.image;

@@ -109,4 +109,4 @@ function navbar(){
     </div>`;
  }
 
-export {navbar}
+export default navbar

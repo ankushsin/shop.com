@@ -1,4 +1,4 @@
-import navbar from '../navbar/componets/navbar.js';
+import navbar from '../components/navbar.js';
 
 
 let nabvar_div = document.getElementById('navbar')
@@ -9,18 +9,6 @@ nabvar_div.innerHTML= navbar()
 
 // let footer_div = document.getElementById('footer')
 // footer_div.innerHTML= footer()
-
-let search_bt = document.getElementById('search_btn')
-
-
- search_bt.onclick=(()=>{
-    // console.log("gaga")
-    let searchbar = document.getElementById('searchbar').value;
-    // console.log(searchbar)
-   localStorage.setItem('search_item', JSON.stringify(searchbar))
-   window.location.href='./search.html'
-
- })
 
 
 
@@ -76,7 +64,7 @@ var arr = [
 },
 
 ]
-
+console.log(arr)
 
 localStorage.setItem('arr1', JSON.stringify(arr))
  
@@ -119,6 +107,7 @@ display()
 
 function storedata(data){
     localStorage.setItem("clicked_item", JSON.stringify(data));
+    window.location.href='./ankit/description.html'
    }
 
 // -----------------slider part-----------
@@ -970,3 +959,15 @@ scroll_btn_16.addEventListener('click', function(){
 
 
 
+
+let search_bt = document.getElementById('search_btn')
+
+
+ search_bt.onclick=(()=>{
+    console.log("gaga")
+    let searchbar = document.getElementById('searchbar').value;
+    console.log(searchbar)
+   localStorage.setItem('search_item', JSON.stringify(searchbar))
+   window.location.href='./search.html'
+
+ })
