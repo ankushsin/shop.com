@@ -346,7 +346,7 @@ function display3(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -463,7 +463,7 @@ function display4(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -558,7 +558,7 @@ function display5(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -697,7 +697,7 @@ function display6(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -797,7 +797,7 @@ function display7(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
@@ -920,7 +920,7 @@ function display8(){
         let Name = document.createElement('h1')
         Name.innerText=ele.Name;
         let price = document.createElement('h1')
-        price.innerText=ele.price;
+        price.innerText=`$${ele.price}`;
         let rating_img=document.createElement('img')
         rating_img.src=ele.rating_img
         rating_img.setAttribute('class','rate_img')
